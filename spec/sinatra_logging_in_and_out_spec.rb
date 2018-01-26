@@ -60,7 +60,6 @@ describe 'ApplicationController' do
       expect(last_response.body).to include('Log Out')
     end
 
-#this one
     it "shows the error page if username and ID do not match available users" do
       post '/login', {
         "username"=> "joe", "password" => "nopassword"
