@@ -21,7 +21,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-
+    binding.pry
   end
 
   get '/logout' do
