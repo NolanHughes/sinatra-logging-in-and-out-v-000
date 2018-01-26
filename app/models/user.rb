@@ -3,6 +3,6 @@ class User < ActiveRecord::Base
 
   def initialize(username, password, balance)
     @username, @password, @balance = username, password, balance
-    self.save
+    # self.save
   end
 end
