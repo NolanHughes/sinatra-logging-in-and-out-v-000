@@ -22,6 +22,7 @@ class ApplicationController < Sinatra::Base
 
   get '/account' do
     @current_user = Helpers.current_user(session)
+    binding.pry
     erb :'account'
   end
 
