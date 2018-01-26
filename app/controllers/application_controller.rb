@@ -19,7 +19,6 @@ class ApplicationController < Sinatra::Base
 
       redirect to '/account'
     else
-      binding.pry
       erb :'error'
     end
   end
