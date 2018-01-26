@@ -17,7 +17,7 @@ class ApplicationController < Sinatra::Base
       session[:user_id] = @user[:id]
 
       @current_user = Helpers.current_user(session[:user_id])
-
+      binding.pry
       redirect to '/account'
     else
       erb :'error'
