@@ -15,7 +15,7 @@ class ApplicationController < Sinatra::Base
     session[:user_id] = @user[:id]
     binding.pry
     @current_user = Helpers.current_user(session[:user_id])
-      
+
     if @current_user.is_logged_in?
       redirect to '/account'
     else
