@@ -73,7 +73,7 @@ describe 'ApplicationController' do
       get '/account'
       expect(last_response.body).to include('You Must <a href="/">Log In</a> to View Your Balance')
     end
-
+#this one
     it 'displays the account information if a user is logged in' do
       user1 = User.create(:username => "skittles123", :password => "iluvskittles", :balance => 1000)
       params = {
