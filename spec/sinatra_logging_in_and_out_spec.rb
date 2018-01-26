@@ -6,7 +6,7 @@ describe 'ApplicationController' do
       get '/'
       expect(last_response.status).to eq(200)
     end
- 
+
     it "contains a form for a user to log in" do
       get '/'
       expect(last_response.body).to include("<input")
