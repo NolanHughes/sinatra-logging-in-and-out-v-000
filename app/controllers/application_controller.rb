@@ -11,7 +11,6 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/login' do
-    binding.pry
     @user = User.find(params[:username])
   end
 
